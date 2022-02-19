@@ -1,4 +1,4 @@
-class user:
+class User:
   '''
   class that generates an instance of user
   '''
@@ -26,3 +26,11 @@ def __init__(self,username,password):
   
     '''
     User.user_list.remove(self)
+
+    @classmethod
+    def find_user(cls, username):
+        for user in cls.user_list:
+            if user.username == username:
+                return  user
+
+  
