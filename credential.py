@@ -22,3 +22,6 @@ class Credentials:
       '''
       delete_credentials method deletes a saved credential from the list
       '''
+      Credentials.credentials_list.remove(self)
+
+      @classmethod()
