@@ -24,4 +24,8 @@ class Credentials:
       '''
       Credentials.credentials_list.remove(self)
 
-      @classmethod()
+    @classmethod
+    def find_credentials(cls, credentials):
+        for Credentials in cls.credentials_list:
+            if user.credentials == credentials:
+                return  credentials 
