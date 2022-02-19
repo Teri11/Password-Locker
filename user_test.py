@@ -1,5 +1,6 @@
 # !usr/bin/env python3.8  helps to know which python version you used.
 import unittest
+import pyperclip
 from user import User
 class TestUser(unittest.TestCase):
    def setUp(self):
