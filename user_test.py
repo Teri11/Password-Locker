@@ -15,3 +15,9 @@ def setUp(self):
    Set up method to run before each test cases.
    '''
 self.new_user = User("Augustine","1234") # create user object
+
+def test_init(self):
+  '''
+  test_init test case to test if the object is initialized properly
+  '''
+  
