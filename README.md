@@ -1,5 +1,5 @@
 ## PASSWORD LOCKER
-WE make your password load lighter by making remebering easier.<br>Created on 19/02/2022<br>
+We make your password load lighter by making remebering easier.<br>Created on <strong>19/02/2022</strong><br>
 <strong>By Kubai Augustine Mweteri</strong>
 
 ## DESCRIPTION
