@@ -17,3 +17,8 @@ class Credentials:
       test case to save new credentials
       '''
       Credentials.credentials_list.append(self)
+
+    def delete_credentials(self):
+      '''
+      delete_credentials method deletes a saved credential from the list
+      '''
