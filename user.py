@@ -22,6 +22,7 @@ def __init__(self,username,password):
 
   def delete_user(self):
     '''
-    to check if user details is deleted
+     delete method deletes user details from a  saved account list
+  
     '''
     User.user_list.remove(self)
