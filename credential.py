@@ -9,3 +9,11 @@ class Credentials:
     '''
     To check if the credentials are initialized properly
     '''
+    self.username = username
+    self.password = password
+
+    def save_credentials(self):
+      '''
+      test case to save new credentials
+      '''
+      Credentials.credentials_list.append(self)
