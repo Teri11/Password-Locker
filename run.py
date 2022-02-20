@@ -155,25 +155,25 @@ def main():
                     print('*'*100)
 
                   elif random_password =="rp":    
-                        length = int(input('\nEnter password length: '))
-                        print('*'*100)
-                        lower = string.ascii_lowercase
-                        upper = string.ascii_uppercase
-                        num = string.digits
-                        symbols = string.punctuation
-                        all = lower + upper + num + symbols  
-                        temp = random.sample(all,length)
-                        password = "".join(temp)               
-                        print(f"Your password has successfully been generated.\n Your password is{password}")
-                        break
-                        save_credentials(create_credentials(username,password))
-                        print('*'*100)
+                    length = int(input('\nEnter password length: '))
+                    print('*'*100)
+                    lower = string.ascii_lowercase
+                    upper = string.ascii_uppercase
+                    num = string.digits
+                    symbols = string.punctuation
+                    all = lower + upper + num + symbols  
+                    temp = random.sample(all,length)
+                    password = "".join(temp)               
+                    print(f"Your password has successfully been generated.\n Your password is{password}")
+                    break
+                    save_credentials(create_credentials(username,password))
+                    print('*'*100)
 
-                  elif short_code == "ext":
+                  elif random_password == "ext":
                     print ("Thank you for using Portal Account")
                     print('*'*100)
-                      
                     break
+                    
 
 
 
