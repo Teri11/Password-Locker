@@ -29,6 +29,20 @@ def find_user(user):
     '''
     user.find_user()
 
+    #credentials details
+def create_credentials(username,password):
+  ''' 
+  create new credentials
+  '''
+  new_credentials = (username,password)
+  return new_credentials
+
+def save_credentials(credentials):
+  '''
+  Function to save credentials
+  '''
+  credentials.save_credentials()
+
 
 def main():
   print("Hello,Welcome to Portal Accounts,What is your Name?")
