@@ -47,6 +47,8 @@ def main():
       name = input()
       print("Enter password ...")
       password = input()
+      save_user(name)
+      print('*'*100)
      
       
 
