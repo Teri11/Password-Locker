@@ -1,6 +1,8 @@
 #!/usr/bin/env python3.9
 from user import User
 from credentials import credentials
+import random
+import string
 
 # user details
 
@@ -142,13 +144,38 @@ def main():
                     print ("password:")
                     password = input()
                     print('*'*100)
-                
+
+                #generating passwords
                 while True:
-                  print("use these short code: cp- create password,generate a password ,rp-random password")
+                  print("Use short code: cp- create password,generate a password ,rp-random password,ext-exit application")
                   random_password = input().lower()
                   if random_password =="cp":
                     print("Create password")
                     password =input()
+                    print('*'*100)
+
+                  elif random_password =="rp":    
+                        length = int(input('\nEnter password length: '))
+                        print('*'*100)
+                        lower = string.ascii_lowercase
+                        upper = string.ascii_uppercase
+                        num = string.digits
+                        symbols = string.punctuation
+                        all = lower + upper + num + symbols  
+                        temp = random.sample(all,length)
+                        password = "".join(temp)               
+                        print(f"Your password has successfully been generated.\n Your password is{password}")
+                        break
+                        save_credentials(create_credentials(username,password))
+                        print('*'*100)
+
+                  elif short_code == "ext":
+                    print ("Thank you for using Portal Account")
+                    print('*'*100)
+                      
+                    break
+
+
 
                      
           
