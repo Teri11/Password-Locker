@@ -92,7 +92,7 @@ def main():
             name = input()
             print("Enter password ...")
             password = input()
-            # save_users(create_user(username,password))
+          
             print('*'*100)
             print(f"Hello {username}\nUser Name:{name}.\nPortal Account has been created successfully.\nPlease proceed to login to access your account")
             print('*'*100)
@@ -116,7 +116,7 @@ def main():
                     print("Password...")
                     password = input()
                     print('*'*100)
-                    # save_credentials(create_credentials(username,password))
+                   
                     print(
                         f"Your username and password Portal Account details have been saved successfully.")
                     print("*"*100)
