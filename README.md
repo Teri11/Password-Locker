@@ -8,6 +8,18 @@ We make your password load lighter by making remebering easier.<br>Created on <s
  ## Setup/Installation Requirements
 1)Install the Visual studio code.<br>2)Git clone the repository.<br>3)Make sure the live server extension is installed.<br>4)Click on Go live.
 
+## Running the Application and cloning the repository
+Open terminal:
+
+git clone https:https://github.com/Teri11/Password-Locker
+
+cd password-locker
+
+chmod +x run.py
+
+./run.py
+
+
 ## Todo list
 1)Design.<br>2)Execute for business use.
 
