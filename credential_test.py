@@ -14,5 +14,17 @@ class TestCredentials(unittest.TestCase):
         '''
          test case to know if credentials has been initialized well
          '''
-        self.assertEqual(self.new_credentials.username,"Augustine")
-        self.assertEqual(self.new_credentials.password,"1234")
+        self.assertEqual(self.new_credentials.username, "Augustine")
+        self.assertEqual(self.new_credentials.password, "1234")
+
+    def test_save_credentials(self):
+        '''
+        To test if credentials are saved in credential list
+        '''
+        self.new_credentials.test_save_credentials
+        self.assertEqual(len(Credentials.credentials_list), 1)
+    def tearDown(self):
+        '''
+        A test to clean up after each test case has run.
+        '''
+        Credentials.credentials_list = []
