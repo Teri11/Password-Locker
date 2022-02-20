@@ -42,9 +42,12 @@ def main():
     short_code = input().lower()
     if short_code =='cu':
       print("Create New User😀 Account😀")
-      print('*'*7)
-      print("Enter your User Name .....")
-      first_name = input()
+      print('*'*100)
+      print("Enter your User Name ...")
+      name = input()
+      print("Enter password ...")
+      password = input()
+     
       
 
 
