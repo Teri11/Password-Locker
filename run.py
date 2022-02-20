@@ -142,6 +142,13 @@ def main():
                     print ("password:")
                     password = input()
                     print('*'*100)
+                
+                while True:
+                  print("use these short code: cp- create password,generate a password ,rp-random password")
+                  random_password = input().lower()
+                  if random_password =="cp":
+                    print("Create password")
+                    password =input()
 
                      
           
