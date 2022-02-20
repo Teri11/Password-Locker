@@ -1,6 +1,6 @@
 # !usr/bin/env python3.9  helps to know which python version you used.
 import unittest  # Importing the unittest module
-from credential import Credentials
+from credentials import Credentials
 
 
 class TestCredentials(unittest.TestCase):
@@ -36,8 +36,8 @@ class TestCredentials(unittest.TestCase):
         '''
         self.new_credentials.save_credentials()
         test_credentials = Credentials("Teri", "1234")
-        test_credential.save_credentials()
-        self.new_credentials.delete_credential()
+        test_credentials.save_credentials()
+        self.new_credentials.delete_credentials()
         self.assertEqual(len(Credentials.credentials_list), 1)
 
         def test_display_credentials(self):
@@ -56,6 +56,7 @@ class TestCredentials(unittest.TestCase):
             test_credentials = Credentials("Teri", "1234")
             test_credentials.save_credentials()
             self.assertEqual(len(Credentials.credentials_list), 2)
+
         def test_find_credentials(self):
            '''
            find a user using username and display information
