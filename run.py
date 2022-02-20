@@ -31,15 +31,21 @@ def find_user(user):
 
 
 def main():
-  print("Hello,Welcome to Portal Accounts,What is your username?")
+  print("Hello,Welcome to Portal Accounts,What is your Name?")
   username =input()
 
-  print(f"Hello {username}.What do you want to do in the Portal?")
+  print(f"Hello {username}.Use the codes below to make your experience better with us")
   print('\n')
 
   while True:
-    print("Use the short codes here to access:cu-create new user,du-Display new user,fu-find user,login-log in to your account.ex-exit user list")
+    print("Use the short codes here to access:cu-create new user,du-Display new user,fu-find user,login-log in to your account,ex-exit user list")
     short_code = input().lower()
+    if short_code =='cu':
+      print("Create New User😀 Account😀")
+      print('*'*7)
+      print("Enter your User Name .....")
+      first_name = input()
+      
 
 
 
