@@ -59,7 +59,7 @@ class TestCredentials(unittest.TestCase):
 
         def test_find_credentials(self):
            '''
-           find a user using username and display information
+           find credentials using username and display information
            '''
         self.new_credentials.save_credentials()
         test_credentials = Credentials("Teri", "1234")
