@@ -11,7 +11,7 @@ def create_user(username, password):
     return new_user
 
 
-def save_user(user):
+def save_users(user):
     '''
        To save user details
     '''
@@ -38,7 +38,7 @@ def main():
   print('\n')
 
   while True:
-    print("Use the short codes here to access:cu-create new user,du-Display new user,fu-find user,login-log in to your account,ex-exit user list")
+    print("Use the short codes here to access:cu-create new user\ndu-Display new user\nfu-find user\nlogin-log in to your account\nex-exit user list")
     short_code = input().lower()
     if short_code =='cu':
       print("Create New User😀 Account😀")
@@ -47,42 +47,13 @@ def main():
       name = input()
       print("Enter password ...")
       password = input()
-      save_user(name)
       print('*'*100)
+      print(f"Hello {username}\nUser Name:{name}.\nPortal Account has been created successfully.\nPlease proceed to login to access your account")
+      print('*'*100)
+      
+     
      
       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
