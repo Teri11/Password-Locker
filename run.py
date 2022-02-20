@@ -118,17 +118,41 @@ def main():
                     print(
                         f"Your username and password Portal Account details have been saved successfully.")
                     print("*"*100)
-
-                elif short_code == "dp":
-                    if display_credentials():
+                     
+                elif short_code == 'dp':
+                       if display_credentials():
                         print("This is a list of your credentials")
                         print('*'*100)
-                for display in display_credentials():
-                    print(
+                       for display in display_credentials():
+                           print(
                         f"Username:{display.username} \n Password:{display.password}")
-                else:
-                    print("Your credentials are not currently available")
-                    print("--"*100)
+                       else:
+                           print("Your credentials are not currently available")
+                           print("--"*100)
+                elif short_code == 'ex':
+                      print("Logged out successfully")
+                      print('*'*100)
+                      break
+
+                elif short_code =="gc":
+                    print("User")
+                    print("*"*100)
+                    print ("Username:")
+                    username = input()
+                    print ("password:")
+                    password = input()
+                    print('*'*100)
+
+                     
+          
+
+
+
+
+
+
+
+              
 
 
 if __name__ == '__main__':
