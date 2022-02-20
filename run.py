@@ -47,14 +47,18 @@ def main():
       name = input()
       print("Enter password ...")
       password = input()
+      save_users(create_user(name,password))
+      
       print('*'*100)
       print(f"Hello {username}\nUser Name:{name}.\nPortal Account has been created successfully.\nPlease proceed to login to access your account")
       print('*'*100)
       
+    elif short_code == 'log' or short_code == 'du':
+      print('*'*100)
+      print("Enter your User Name...")
      
      
       
-
 
 
 
